@@ -32,7 +32,7 @@ n = 1;
 t = time_step;
 
 while (1)
-    if n == 1000000
+    if n == 10000
         break;
     end
     % 2. Get f(:,n)
@@ -91,7 +91,7 @@ while (1)
     xs = [u(1,n+1), u(2,n+1), u(3,n+1)];
     ys = [0,0,0];
     scatter(xs, ys)
-    xlim([0 .1])
+    xlim([0 .01])
     pause(0.1)
 end
 
